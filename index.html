@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/project-js-group02/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/project-js-group02/assets/vendor-Df-9lPyd.js">
+  <link rel="modulepreload" crossorigin href="/project-js-group02/assets/vendor-D_IklC8U.js">
   <link rel="stylesheet" crossorigin href="/project-js-group02/assets/vendor-Du3mw4TU.css">
   <link rel="stylesheet" crossorigin href="/project-js-group02/assets/index-Ddx4zbQa.css">
 </head>
@@ -764,7 +764,8 @@
       <h2>Let’s <span class="work-together-span">work</span> together</h2>
     </div>
     <form class="work-together-form" action="">
-      <input type="text" name="email" placeholder="clients@gmail.com" />
+      <input type="text" name="email" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" 
+         required/>
       <input type="text" name="comments" placeholder="comments" />
       <button type="submit">Send</button>
     </form>
