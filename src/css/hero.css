@@ -13,8 +13,17 @@
 }
 
 .container-hero {
+<<<<<<< HEAD
   text-align: center;
+=======
+  position: relative;
+  padding: 16px;
+  width: 98%;
+  margin: 0 auto;
+  /* height: 100vh; */
+>>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
 }
+
 .hero-header {
   font-family: 'Inter Tight', sans-serif;
 
@@ -28,6 +37,7 @@
 
   text-align: left;
 }
+
 .hero_list {
   position: absolute;
   bottom: 32px;
@@ -55,12 +65,21 @@
 
 .hero_social_media:hover,
 .hero_social_media:focus {
+<<<<<<< HEAD
   border-color: rgba(237, 59, 68, 1);
+=======
+  background-color: rgba(248, 127, 127, 0.216);
+>>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
 }
 
 .hero_email:hover,
 .hero_email:focus {
+<<<<<<< HEAD
   border-color: rgba(237, 59, 68, 1);
+=======
+  background-color: rgba(248, 127, 127, 0.216);
+  ;
+>>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
 }
 
 .hero_email {
@@ -84,7 +103,15 @@
     width: 343px;
     margin: 0;
   }
+<<<<<<< HEAD
+=======
+
+  .container-hero {
+    height: 812px;
+  }
+>>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
 }
+
 /* ------tablet------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) {
   .container {
@@ -109,27 +136,38 @@
     height: 55px;
     font-size: 16px;
   }
+
   .hero_email {
     font-size: 16px;
     height: 55px;
   }
 }
+
 /* ------desktop------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 1440px) {
   section.container {
     padding: 0px 32px;
     width: 1376px;
   }
+<<<<<<< HEAD
   .section-hero {
     background-image: url(../img/Hero_2x.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+=======
+
+       
+        background-image: url(../img/Hero_2x.png);
+        background-repeat: no-repeat;
+    }
+>>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
   .container-hero {
     width: 1184px;
     height: 900px;
   }
+
   .hero-header {
     display: flex;
     justify-content: center;
