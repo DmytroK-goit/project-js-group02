@@ -1,5 +1,5 @@
 .section-hero {
-  background-image: url(../img/Hero_1x.png);
+  background-image: url(../img/hero-img/hero_1x.png);
   color: rgb(57, 30, 30);
   background-size: contain;
   background-position: center;
@@ -13,17 +13,8 @@
 }
 
 .container-hero {
-<<<<<<< HEAD
   text-align: center;
-=======
-  position: relative;
-  padding: 16px;
-  width: 98%;
-  margin: 0 auto;
-  /* height: 100vh; */
->>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
 }
-
 .hero-header {
   font-family: 'Inter Tight', sans-serif;
 
@@ -37,22 +28,22 @@
 
   text-align: left;
 }
-
 .hero_list {
   position: absolute;
   bottom: 32px;
-  right: 0;
+  right: -15px;
   display: flex;
   justify-content: end;
   gap: 4px;
+  
 }
 
 .hero_social_media {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 37px;
-  height: 37px;
+  width: 35px;
+  height: 35px;
 
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -65,21 +56,12 @@
 
 .hero_social_media:hover,
 .hero_social_media:focus {
-<<<<<<< HEAD
   border-color: rgba(237, 59, 68, 1);
-=======
-  background-color: rgba(248, 127, 127, 0.216);
->>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
 }
 
 .hero_email:hover,
 .hero_email:focus {
-<<<<<<< HEAD
   border-color: rgba(237, 59, 68, 1);
-=======
-  background-color: rgba(248, 127, 127, 0.216);
-  ;
->>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
 }
 
 .hero_email {
@@ -103,15 +85,7 @@
     width: 343px;
     margin: 0;
   }
-<<<<<<< HEAD
-=======
-
-  .container-hero {
-    height: 812px;
-  }
->>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
 }
-
 /* ------tablet------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) {
   .container {
@@ -136,42 +110,31 @@
     height: 55px;
     font-size: 16px;
   }
-
   .hero_email {
     font-size: 16px;
     height: 55px;
   }
 }
-
 /* ------desktop------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 1440px) {
   section.container {
     padding: 0px 32px;
     width: 1376px;
   }
-<<<<<<< HEAD
   .section-hero {
-    background-image: url(../img/Hero_2x.png);
+    background-image: url(../img/hero-img/hero_2x.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-=======
-
-       
-        background-image: url(../img/Hero_2x.png);
-        background-repeat: no-repeat;
-    }
->>>>>>> 3b5c0be3c6b9942e6141664084d22d37580137b7
   .container-hero {
     width: 1184px;
     height: 900px;
   }
-
   .hero-header {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-top: 300px;
   }
 }
