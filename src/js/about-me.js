@@ -7,6 +7,7 @@ import 'accordion-js/dist/accordion.min.css';
 const swiperCont = document.querySelector('.about-skills');
 
 const swiper = new Swiper(swiperCont, {
+  initialSlide: 0,
   navigation: {
     nextEl: '.about-swiper-btn',
   },
@@ -29,23 +30,22 @@ const swiper = new Swiper(swiperCont, {
   slidesPerView: 6,
   // slidesPerGroup: 1,
 
-  // breakpoints: {
-  //   // when window width is >= 375px
-  //   375: {
-  //     slidesPerView: 2,
-  //     width: 260,
-  //   },
-  //   // when window width is >= 768px
-  //   768: {
-  //     slidesPerView: 3,
-  //     width: 600,
-  //   },
-  //   // when window width is >= 1440px
-  //   1440: {
-  //     slidesPerView: 'auto',
-  //     width: 200,
-  //   },
-  // },
+  breakpoints: {
+    // when window width is >= 375px
+    375: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+      // width: 600,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 6,
+      // width: 1200,
+    },
+  },
 });
 
 const container = document.querySelector('.about-accordion-container');
