@@ -1,4 +1,5 @@
 import Swiper from 'swiper/bundle';
+
 import 'swiper/css/bundle';
 
 import Accordion from 'accordion-js';
@@ -23,29 +24,26 @@ const swiper = new Swiper(swiperCont, {
   slideClass: 'about-skills-item',
   slideActiveClass: 'about-skills-item-accent',
   wrapperClass: 'about-skills-list',
+  spaceBetween: 0,
   loop: true,
-  width: 6,
-  // loopAdditionalSlides: 4,
-  slidesPerView: 6,
+  // slidesPerView: 3,
+  // centeredSlides: true,
   // slidesPerGroup: 1,
 
-  // breakpoints: {
-  //   // when window width is >= 375px
-  //   375: {
-  //     slidesPerView: 2,
-  //     width: 260,
-  //   },
-  //   // when window width is >= 768px
-  //   768: {
-  //     slidesPerView: 3,
-  //     width: 600,
-  //   },
-  //   // when window width is >= 1440px
-  //   1440: {
-  //     slidesPerView: 'auto',
-  //     width: 200,
-  //   },
-  // },
+  breakpoints: {
+    1440: {
+      slidesPerView: 6,
+      width: 6,
+    },
+    768: {
+      slidesPerView: 3,
+      centeredSlides: true,
+      // width: 120,
+    },
+    320: {
+      slidesPerView: 2,
+    },
+  },
 });
 
 const container = document.querySelector('.about-accordion-container');
@@ -57,4 +55,9 @@ const accordion = new Accordion(container, {
   elementClass: 'about-ac',
   panelClass: 'about-ac-panel',
   triggerClass: 'about-ac-btn',
+});
+window.addEventListener('resize', () => {
+  setTimeout(() => {
+    swiper.update();
+  }, 100); // Add a slight delay
 });
